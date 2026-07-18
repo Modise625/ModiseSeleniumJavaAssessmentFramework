@@ -9,6 +9,8 @@ public class HomePage {
     WebDriver driver;
     @FindBy(xpath = "//*[@id=\"overview-instructor\"]/img")
     WebElement instructorImage_xpath;
+    @FindBy(xpath = "//*[@id=\"app-root\"]/nav/div[1]/div[3]/button")
+    WebElement loginButton_xpath;
 
 
     public HomePage(WebDriver driver) {
@@ -18,6 +20,9 @@ public class HomePage {
 
     public void verifyInstructorImageIsDisplayed() {
         instructorImage_xpath.isDisplayed();
+    }
+    public void clickLoginButton_xpath() {
+        loginButton_xpath.click();
     }
 
 
