@@ -18,6 +18,9 @@ public class HomePage {
 
     }
 
+    public static void VerifyInstructorImageIsDisplayed() {
+    }
+
     public void verifyInstructorImageIsDisplayed() {
         instructorImage_xpath.isDisplayed();
     }
